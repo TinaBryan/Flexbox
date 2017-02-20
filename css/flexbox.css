@@ -5,7 +5,8 @@
 @media (min-width: 769px) {
 	.main-header,
 	.main-nav, 
-	.row {
+	.row,
+	.col {
 		display: flex;
 	}
 	.main-header {
@@ -15,8 +16,21 @@
 
 	.col {
 		flex: 1;
+		flex-direction: column;
+	}
+
+	.button {
+		margin-top: auto;
+		align-self: flex-start;
 	}
 	
+	.row {
+		flex-wrap: wrap;
+	}
+
+	.secondary {
+		order: -1;
+	}
 
 }
 
@@ -26,8 +40,12 @@
 		justify-content: space-between;
 	}
 
+	.col {
+		flex-basis: 0;
+	}
+
 	.primary {
-		flex: 2;
+		flex-grow: : 1.4;
 	}
 
 }
